@@ -1,0 +1,19 @@
+def search(list,x):
+    i,j=0,len(list)-1
+    while i <=j:
+        k=(i+j)//2
+        if x==list[k]:
+            return k
+        elif x<list[k]:
+            j=k-1
+        else:
+            i=k+1
+    return -1
+list1=[i for i in range(1,100)]
+#a**2+b**2=x
+x=100
+for i in range(len(list1)):
+    a=list1[i]
+    idx= search(list1[i:],(x-a**2)**0.5)
+    if idx!=-1:
+        print(a,list1[i+idx])
