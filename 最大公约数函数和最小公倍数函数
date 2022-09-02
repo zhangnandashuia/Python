@@ -1,0 +1,12 @@
+def gys(a,b):
+    if a<b:
+        a,b=b,a
+    x=a%b
+    while x!=0:
+        a=b
+        b=x
+        x=a%b
+    return b
+def gbs(a,b):
+    x=a*b/gys(a,b)
+    return int(x)
