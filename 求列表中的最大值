@@ -1,0 +1,6 @@
+list1=[1,4556,65,38478,44,5675,3434,234243,44]
+max = list1[0]
+for i in range(len(list1)-1):
+	if list1[i]>=max :
+		max = list1[i]
+print(max)
