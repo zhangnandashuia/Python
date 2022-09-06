@@ -1,0 +1,11 @@
+import random
+x = random.randint(1,100)
+num = int(input("请输入一个数"))
+while num !=x:
+	if num >x:
+		print("你输入的数大了")
+		num = int(input("请再次输入"))
+	elif num<x:
+		print("你输入的数小了")
+		num = int(input("请再次输入"))
+print("恭喜你答对了")
